@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(179 68% 97%)"/>
+      <stop offset="1" stop-color="hsl(207 72% 91%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="138" r="120" fill="hsl(233 78% 66%)" opacity="0.24"/>
+  <circle cx="170" cy="168" r="104" fill="white" opacity="0.58"/>
+  <path d="M0 684C188 624 374 622 562 664C754 708 988 732 1200 660V800H0V684Z" fill="hsl(179 42% 28%)" opacity="0.14"/>
+
+  <rect x="290" y="220" width="250" height="520" rx="30" fill="hsl(179 42% 28%)"/>
+  <rect x="520" y="160" width="220" height="580" rx="30" fill="hsl(179 54% 34%)" opacity="0.96"/>
+  <g opacity="0.82">
+    <rect x="338" y="290" width="56" height="84" rx="12" fill="white"/>
+    <rect x="420" y="290" width="56" height="84" rx="12" fill="hsl(233 78% 66%)"/>
+    <rect x="338" y="406" width="56" height="84" rx="12" fill="hsl(233 78% 66%)"/>
+    <rect x="420" y="406" width="56" height="84" rx="12" fill="white"/>
+    <rect x="564" y="234" width="62" height="82" rx="12" fill="white"/>
+    <rect x="654" y="234" width="42" height="82" rx="12" fill="hsl(233 78% 66%)"/>
+    <rect x="564" y="352" width="62" height="82" rx="12" fill="hsl(233 78% 66%)"/>
+    <rect x="654" y="352" width="42" height="82" rx="12" fill="white"/>
+  </g>
+    
+  <text x="84" y="112" fill="hsl(179 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">KOCHI · APARTMENT</text>
+  <text x="84" y="174" fill="hsl(179 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="46" font-weight="700">Harbor View Residences</text>
+  <text x="84" y="214" fill="hsl(179 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="26">Kakkanad, Kochi</text>
+  <text x="84" y="250" fill="hsl(179 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="20">Skyline residence</text>
+  <rect x="84" y="286" width="360" height="56" rx="28" fill="white" opacity="0.62"/>
+  <text x="112" y="322" fill="hsl(179 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="600">Smart-city apartment</text>
+</svg>

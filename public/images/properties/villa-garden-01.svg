@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF6FF"/>
+      <stop offset="1" stop-color="#ECFFF5"/>
+    </linearGradient>
+    <linearGradient id="villa" x1="430" y1="270" x2="990" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#314FA9"/>
+      <stop offset="1" stop-color="#12224B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1280" cy="170" r="120" fill="#A9EDD0" opacity=".4"/>
+  <path d="M0 820C180 760 340 740 520 780C730 826 980 850 1230 804C1370 778 1490 760 1600 770V1000H0V820Z" fill="#19356E" opacity=".92"/>
+  <rect x="380" y="360" width="780" height="340" rx="42" fill="url(#villa)"/>
+  <path d="M430 410L770 210L1110 410V470H430V410Z" fill="#F7FAFF"/>
+  <rect x="730" y="470" width="120" height="230" rx="24" fill="#F7FAFF"/>
+  <rect x="470" y="470" width="180" height="120" rx="26" fill="#B6F2DA"/>
+  <rect x="900" y="470" width="180" height="120" rx="26" fill="#CDE5FF"/>
+  <rect x="470" y="610" width="180" height="90" rx="26" fill="#CDE5FF"/>
+  <rect x="900" y="610" width="180" height="90" rx="26" fill="#B6F2DA"/>
+  <path d="M190 770C300 690 430 650 560 670C680 688 760 740 850 810H190V770Z" fill="#90D7AF"/>
+  <circle cx="320" cy="705" r="40" fill="#5ABC86"/>
+  <circle cx="610" cy="726" r="34" fill="#5ABC86"/>
+  <text x="92" y="122" fill="#173165" font-family="DM Sans, Arial, sans-serif" font-size="40" font-weight="700">Garden villa collection</text>
+  <text x="92" y="168" fill="#4E70CC" font-family="DM Sans, Arial, sans-serif" font-size="24">Private lawn, layered light, refined family scale</text>
+</svg>

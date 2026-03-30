@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1120" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="1" stop-color="hsl(220 72% 91%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="88" fill="hsl(246 78% 66%)" opacity="0.28"/>
+  <text x="84" y="122" fill="hsl(192 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">PROPERTY SNAPSHOT</text>
+  <text x="84" y="184" fill="hsl(192 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="54" font-weight="700">INR 9,800,000</text>
+  <rect x="84" y="250" width="504" height="154" rx="28" fill="white" opacity="0.74"/><text x="116" y="304" fill="hsl(192 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">BUILDER</text><text x="116" y="354" fill="hsl(192 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="30" font-weight="700">Pink City Dwellings</text><rect x="612" y="250" width="504" height="154" rx="28" fill="white" opacity="0.74"/><text x="644" y="304" fill="hsl(192 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">POSSESSION</text><text x="644" y="354" fill="hsl(192 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="30" font-weight="700">Ready to move</text><rect x="84" y="470" width="504" height="154" rx="28" fill="white" opacity="0.74"/><text x="116" y="524" fill="hsl(192 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">CONFIGURATION</text><text x="116" y="574" fill="hsl(192 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="30" font-weight="700">3 BHK</text><rect x="612" y="470" width="504" height="154" rx="28" fill="white" opacity="0.74"/><text x="644" y="524" fill="hsl(192 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">SIZE</text><text x="644" y="574" fill="hsl(192 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="30" font-weight="700">1,490 sqft</text>
+</svg>

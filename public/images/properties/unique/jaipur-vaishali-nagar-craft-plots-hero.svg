@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(169 68% 97%)"/>
+      <stop offset="1" stop-color="hsl(197 72% 91%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="138" r="120" fill="hsl(223 78% 66%)" opacity="0.24"/>
+  <circle cx="170" cy="168" r="104" fill="white" opacity="0.58"/>
+  <path d="M0 684C188 624 374 622 562 664C754 708 988 732 1200 660V800H0V684Z" fill="hsl(169 42% 28%)" opacity="0.14"/>
+
+  <rect x="190" y="520" width="620" height="180" rx="34" fill="hsl(169 42% 28%)" opacity="0.08"/>
+  <path d="M190 690C310 626 420 606 550 620C660 634 748 664 810 700" stroke="hsl(169 54% 34%)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M230 610L320 564L418 612L512 560L610 610L702 560" stroke="hsl(169 42% 28%)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.64"/>
+  <circle cx="330" cy="460" r="54" fill="hsl(223 78% 66%)" opacity="0.4"/>
+  <circle cx="612" cy="450" r="38" fill="hsl(223 78% 66%)" opacity="0.3"/>
+        
+  <text x="84" y="112" fill="hsl(169 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">JAIPUR · PLOT</text>
+  <text x="84" y="174" fill="hsl(169 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="46" font-weight="700">Craft Avenue Plots</text>
+  <text x="84" y="214" fill="hsl(169 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="26">Vaishali Nagar, Jaipur</text>
+  <text x="84" y="250" fill="hsl(169 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="20">Land parcel</text>
+  <rect x="84" y="286" width="360" height="56" rx="28" fill="white" opacity="0.62"/>
+  <text x="112" y="322" fill="hsl(169 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="600">Low-density plotted pocket</text>
+</svg>

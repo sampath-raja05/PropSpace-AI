@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF5FF"/>
+      <stop offset="1" stop-color="#F3FFF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1260" cy="170" r="120" fill="#9FE9C9" opacity=".4"/>
+  <path d="M0 760C220 700 460 700 700 750C920 798 1210 830 1600 720V1000H0V760Z" fill="#173064" opacity=".92"/>
+  <path d="M210 690L520 520L910 600L620 780L210 690Z" fill="#DDEBFF"/>
+  <path d="M520 520L930 340L1280 450L910 600L520 520Z" fill="#C7E3FF"/>
+  <path d="M210 690L620 780L1020 700L610 610L210 690Z" fill="#A7F1D6"/>
+  <path d="M520 520L610 610" stroke="#28499D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M910 600L1020 700" stroke="#28499D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M930 340L1280 450" stroke="#28499D" stroke-width="8" stroke-linecap="round"/>
+  <text x="92" y="122" fill="#173165" font-family="DM Sans, Arial, sans-serif" font-size="40" font-weight="700">Plotted estate series</text>
+  <text x="92" y="168" fill="#4E70CC" font-family="DM Sans, Arial, sans-serif" font-size="24">Land banking visuals with roads, blocks, and soft topography</text>
+</svg>

@@ -1,0 +1,10 @@
+.git
+.next
+node_modules
+npm-debug.log
+backend
+Dockerfile
+docker-compose.yml
+README.md
+*.pyc
+__pycache__

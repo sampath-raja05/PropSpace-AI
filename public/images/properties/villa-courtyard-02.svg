@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="0" x2="1500" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F1FF"/>
+      <stop offset="1" stop-color="#EDFFF1"/>
+    </linearGradient>
+    <linearGradient id="villa" x1="420" y1="240" x2="1120" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D4BA7"/>
+      <stop offset="1" stop-color="#101F46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="1280" cy="184" rx="178" ry="108" fill="#A7EED1" opacity=".38"/>
+  <path d="M0 816C202 742 396 726 610 778C822 828 1136 876 1600 760V1000H0V816Z" fill="#1A356E" opacity=".9"/>
+  <rect x="394" y="336" width="812" height="384" rx="44" fill="url(#villa)"/>
+  <path d="M450 398L800 224L1150 398V468H450V398Z" fill="#F7FAFF"/>
+  <rect x="494" y="474" width="162" height="112" rx="24" fill="#B9F3DC"/>
+  <rect x="714" y="486" width="172" height="100" rx="24" fill="#D7E8FF"/>
+  <rect x="944" y="474" width="162" height="112" rx="24" fill="#B9F3DC"/>
+  <rect x="714" y="612" width="172" height="108" rx="26" fill="#F7FAFF"/>
+  <rect x="494" y="620" width="162" height="100" rx="24" fill="#D7E8FF"/>
+  <rect x="944" y="620" width="162" height="100" rx="24" fill="#D7E8FF"/>
+  <rect x="648" y="546" width="304" height="44" rx="22" fill="#173067" opacity=".7"/>
+  <path d="M186 792C308 696 432 668 566 694C684 716 790 792 866 860H186V792Z" fill="#9CE1BA"/>
+  <circle cx="340" cy="720" r="42" fill="#58BF85"/>
+  <circle cx="608" cy="738" r="34" fill="#58BF85"/>
+  <text x="94" y="124" fill="#173165" font-family="DM Sans, Arial, sans-serif" font-size="40" font-weight="700">Courtyard villa collection</text>
+  <text x="94" y="170" fill="#4868C8" font-family="DM Sans, Arial, sans-serif" font-size="24">Landscape-first homes with private leisure space</text>
+</svg>

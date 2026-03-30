@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1480" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF7FF"/>
+      <stop offset="1" stop-color="#F2FFF6"/>
+    </linearGradient>
+    <linearGradient id="house" x1="430" y1="260" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3554AF"/>
+      <stop offset="1" stop-color="#132551"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1280" cy="180" r="128" fill="#A9EFD2" opacity=".42"/>
+  <circle cx="260" cy="190" r="118" fill="#C9D9FF" opacity=".5"/>
+  <path d="M0 804C230 736 440 730 648 784C864 840 1168 878 1600 760V1000H0V804Z" fill="#18336A" opacity=".9"/>
+  <rect x="420" y="360" width="760" height="340" rx="42" fill="url(#house)"/>
+  <path d="M360 420L800 182L1240 420V490H360V420Z" fill="#F8FBFF"/>
+  <rect x="512" y="472" width="184" height="112" rx="24" fill="#CBE6FF"/>
+  <rect x="904" y="472" width="184" height="112" rx="24" fill="#B0F1D8"/>
+  <rect x="720" y="438" width="160" height="262" rx="28" fill="#F8FBFF"/>
+  <rect x="512" y="612" width="184" height="88" rx="24" fill="#B0F1D8"/>
+  <rect x="904" y="612" width="184" height="88" rx="24" fill="#CBE6FF"/>
+  <path d="M160 780C294 676 416 654 548 686C680 718 766 792 846 860H160V780Z" fill="#92DDB4"/>
+  <circle cx="324" cy="714" r="44" fill="#57BD83"/>
+  <circle cx="596" cy="736" r="36" fill="#57BD83"/>
+  <text x="94" y="124" fill="#163065" font-family="DM Sans, Arial, sans-serif" font-size="40" font-weight="700">Modern house series</text>
+  <text x="94" y="170" fill="#4868C8" font-family="DM Sans, Arial, sans-serif" font-size="24">Warm residential scale with calm suburban character</text>
+</svg>

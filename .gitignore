@@ -1,0 +1,12 @@
+.next
+node_modules
+dist
+.env.example
+.env.local
+__pycache__
+.pytest_cache
+*.pyc
+backend/.venv
+.env
+.claude/
+*.log

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(183 68% 97%)"/>
+      <stop offset="1" stop-color="hsl(211 72% 91%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="138" r="120" fill="hsl(237 78% 66%)" opacity="0.24"/>
+  <circle cx="170" cy="168" r="104" fill="white" opacity="0.58"/>
+  <path d="M0 684C188 624 374 622 562 664C754 708 988 732 1200 660V800H0V684Z" fill="hsl(183 42% 28%)" opacity="0.14"/>
+
+  <path d="M260 520L520 340L780 520V760H260V520Z" fill="hsl(183 42% 28%)" opacity="0.98"/>
+  <path d="M310 540H470V660H310Z" fill="hsl(237 78% 66%)" opacity="0.72"/>
+  <path d="M570 540H730V640H570Z" fill="white" opacity="0.74"/>
+  <path d="M500 580H560V760H500Z" fill="white" opacity="0.88"/>
+  <path d="M120 770C210 676 302 650 396 680C492 710 590 788 670 842H120V770Z" fill="hsl(237 78% 66%)" opacity="0.34"/>
+        
+  <text x="84" y="112" fill="hsl(183 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="700">INDORE · VILLA</text>
+  <text x="84" y="174" fill="hsl(183 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="46" font-weight="700">Canvas Villas</text>
+  <text x="84" y="214" fill="hsl(183 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="26">Vijay Nagar, Indore</text>
+  <text x="84" y="250" fill="hsl(183 54% 34%)" font-family="DM Sans, Arial, sans-serif" font-size="20">Private garden estate</text>
+  <rect x="84" y="286" width="360" height="56" rx="28" fill="white" opacity="0.62"/>
+  <text x="112" y="322" fill="hsl(183 46% 18%)" font-family="DM Sans, Arial, sans-serif" font-size="22" font-weight="600">Premium city villa</text>
+</svg>

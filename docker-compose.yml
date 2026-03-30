@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api/v1
+      API_BASE_URL_INTERNAL: http://backend:8000/api/v1
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:postgres@db:5432/propspace
+      JWT_SECRET_KEY: change-me
+      ACCESS_TOKEN_EXPIRE_MINUTES: 120
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: propspace
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - propspace-db:/var/lib/postgresql/data
+
+volumes:
+  propspace-db:

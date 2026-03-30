@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="190" y1="20" x2="1390" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7FF"/>
+      <stop offset="1" stop-color="#DFF7FF"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="560" y1="150" x2="980" y2="870" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4160BA"/>
+      <stop offset="1" stop-color="#17285A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="1290" cy="178" rx="162" ry="104" fill="#AEEFD7" opacity=".42"/>
+  <ellipse cx="292" cy="180" rx="150" ry="110" fill="#CCD9FF" opacity=".42"/>
+  <path d="M0 790C220 720 442 710 654 768C878 830 1180 862 1600 752V1000H0V790Z" fill="#193268" opacity=".9"/>
+  <rect x="520" y="216" width="540" height="560" rx="40" fill="url(#tower)"/>
+  <rect x="612" y="146" width="356" height="132" rx="34" fill="#F8FBFF"/>
+  <rect x="640" y="192" width="300" height="22" rx="11" fill="#B3CDFF"/>
+  <g opacity=".94">
+    <rect x="598" y="318" width="112" height="88" rx="16" fill="#CFE6FF"/>
+    <rect x="736" y="318" width="112" height="88" rx="16" fill="#B8F2DD"/>
+    <rect x="874" y="318" width="112" height="88" rx="16" fill="#CFE6FF"/>
+    <rect x="598" y="438" width="112" height="88" rx="16" fill="#B8F2DD"/>
+    <rect x="736" y="438" width="112" height="88" rx="16" fill="#CFE6FF"/>
+    <rect x="874" y="438" width="112" height="88" rx="16" fill="#B8F2DD"/>
+    <rect x="598" y="558" width="112" height="88" rx="16" fill="#CFE6FF"/>
+    <rect x="736" y="558" width="112" height="88" rx="16" fill="#B8F2DD"/>
+    <rect x="874" y="558" width="112" height="88" rx="16" fill="#CFE6FF"/>
+  </g>
+  <rect x="1120" y="332" width="156" height="444" rx="28" fill="#284992" opacity=".92"/>
+  <rect x="1174" y="286" width="50" height="118" rx="24" fill="#F4F8FF"/>
+  <text x="94" y="124" fill="#173165" font-family="DM Sans, Arial, sans-serif" font-size="40" font-weight="700">Skydeck apartment series</text>
+  <text x="94" y="170" fill="#4868C8" font-family="DM Sans, Arial, sans-serif" font-size="24">High-rise living with bright amenity-led community design</text>
+</svg>
