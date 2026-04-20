@@ -10,12 +10,12 @@ import { PropertyDealRoom } from "@/components/properties/property-deal-room";
 import { EmiCalculator } from "@/components/properties/emi-calculator";
 import { PropertyGallery } from "@/components/properties/property-gallery";
 import { GlassCard } from "@/components/ui/glass-card";
-import { appConfig } from "@/lib/constants";
-import { getProperty } from "@/lib/api";
+import { getProperty, getPropertyCommentary } from "@/lib/api";
+import { getBrowserApiBaseUrl, joinApiUrl } from "@/lib/api-targets";
 import { formatCompactCurrency, formatCurrency, formatPercent, formatScore } from "@/lib/utils";
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
-  const property = await getProperty(params.id);
+  const [property, commentary] = await Promise.all([getProperty(params.id), getPropertyCommentary(params.id)]);
 
   if (!property) {
     notFound();
@@ -86,7 +86,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
               Download a PDF summary covering pricing, comparables, AI commentary, and neighborhood intelligence.
             </p>
             <a
-              href={`${appConfig.apiBaseUrl}/reports/${property.id}/pdf`}
+              href={joinApiUrl(getBrowserApiBaseUrl(), `/reports/${property.id}/pdf`)}
               className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 sm:w-auto"
             >
               <Download className="h-4 w-4" />
@@ -164,9 +164,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
             </div>
 
             <p className="mt-5 text-sm leading-7 text-muted-foreground">
-              {property.overpricingPercent > 6
-                ? "This asset carries a premium ask versus modeled fair value, but the gap is partially offset by strong locality quality and verified project credentials."
-                : "This asset sits close to or below our fair-value band, supported by a healthy balance of livability, access, and long-term demand fundamentals."}
+              {commentary.commentary}
             </p>
           </GlassCard>
         </div>

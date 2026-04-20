@@ -51,7 +51,7 @@ function SliderControl({
           <p className="text-sm font-medium">{label}</p>
           <p className="mt-2 max-w-[20rem] text-xs leading-5 text-muted-foreground">{helper}</p>
         </div>
-        <div className="self-start rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary sm:text-sm">
+        <div className="max-w-full self-start rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium leading-tight text-primary tabular-nums sm:text-sm">
           {valueLabel}
         </div>
       </div>
@@ -217,7 +217,7 @@ export function EmiCalculator({
         />
       </div>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 2xl:grid-cols-3">
+      <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {[
           {
             label: "Monthly EMI",
@@ -256,12 +256,14 @@ export function EmiCalculator({
             tone: "text-teal-700 dark:text-teal-200"
           }
         ].map((item) => (
-          <div key={item.label} className="min-w-0 rounded-[24px] bg-white/60 p-4 dark:bg-slate-800/50">
+          <div key={item.label} className="flex min-h-[12rem] min-w-0 flex-col rounded-[24px] bg-white/60 p-4 dark:bg-slate-800/50">
             <div className={`flex h-11 w-11 items-center justify-center rounded-2xl bg-background/70 ${item.tone}`}>
               <item.icon className="h-5 w-5" />
             </div>
             <p className="mt-4 text-sm text-muted-foreground">{item.label}</p>
-            <p className="mt-2 text-[clamp(1.55rem,3vw,2rem)] font-semibold leading-tight tracking-tight tabular-nums">{item.value}</p>
+            <p className="mt-2 text-[clamp(1.2rem,2vw,1.85rem)] font-semibold leading-[1.1] tracking-tight tabular-nums [overflow-wrap:anywhere]">
+              {item.value}
+            </p>
           </div>
         ))}
       </div>

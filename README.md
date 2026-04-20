@@ -13,6 +13,13 @@ PropSpace AI is a full-stack real estate intelligence app built with Next.js 14,
 
 Copy `.env.example` to `.env` and adjust values if needed.
 
+To enable Groq-powered property commentary, add these values to `.env.local` or your backend env:
+
+```bash
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=llama-3.1-8b-instant
+```
+
 ## Frontend commands
 
 ```bash
@@ -50,9 +57,11 @@ Backend: `http://localhost:8000/api/v1`
 - `GET /api/v1/portfolio`
 - `GET /api/v1/alerts`
 - `GET /api/v1/ml/valuation/{property_id}`
+- `GET /api/v1/ml/commentary/{property_id}`
 - `GET /api/v1/reports/{property_id}/pdf`
 
 ## Notes
 
 - The frontend gracefully falls back to the local seeded dataset if the backend is unavailable.
+- Property commentary falls back to a local generated summary when `GROQ_API_KEY` is not configured or the Groq request fails.
 - The backend bootstrap attempts to create the PostGIS extension and seed demo records when a database is reachable.

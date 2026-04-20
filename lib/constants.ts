@@ -2,7 +2,6 @@ export const appConfig = {
   name: "PropSpace AI",
   description:
     "AI-assisted property intelligence for premium real-estate discovery, investment analysis, and portfolio planning across India.",
-  apiBaseUrl: process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1"
 };
 
 export const propertyTypes = ["apartment", "villa", "plot", "commercial"] as const;

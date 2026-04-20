@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
     database_url: str = "postgresql+psycopg://postgres:postgres@db:5432/propspace"
     jwt_secret_key: str = "change-me"
+    groq_api_key: str | None = None
+    groq_model: str = "llama-3.1-8b-instant"
     access_token_expire_minutes: int = 120
     session_cookie_name: str = "propspace_session"
     session_cookie_secure: bool = False

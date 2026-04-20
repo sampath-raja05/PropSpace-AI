@@ -43,10 +43,6 @@ function isBrowser() {
   return typeof window !== "undefined";
 }
 
-function isDevelopment() {
-  return process.env.NODE_ENV !== "production";
-}
-
 function normalizeUser(user: TokenResponse["user"]): AuthUser {
   return {
     id: user.id,
@@ -126,9 +122,9 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     });
   } catch {
     throw new ApiRequestError(
-      "Unable to reach the application server. Refresh the page or restart the Next.js dev server.",
+      "Unable to reach the application server. Refresh the page and try again.",
       0,
-      "app_unavailable"
+      "api_unavailable"
     );
   }
 
@@ -160,12 +156,7 @@ export async function loginWithPassword(payload: { email: string; password: stri
     clearDemoUser();
     return normalizeUser(response.user);
   } catch (error) {
-    if (
-      error instanceof ApiRequestError &&
-      error.code === "api_unavailable" &&
-      isDevelopment() &&
-      isDemoCredentials(payload)
-    ) {
+    if (error instanceof ApiRequestError && error.code === "api_unavailable" && isDemoCredentials(payload)) {
       const demoUser = createDemoUser();
       persistDemoUser(demoUser);
       return demoUser;

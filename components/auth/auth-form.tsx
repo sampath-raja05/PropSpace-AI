@@ -65,7 +65,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   });
 
   useEffect(() => {
-    router.prefetch("/dashboard");
+    router.prefetch("/");
   }, [router]);
 
   async function finalizeAuth(task: () => Promise<void>) {
@@ -76,7 +76,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
     try {
       await task();
       startTransition(() => {
-        router.replace("/dashboard");
+        router.replace("/");
         router.refresh();
       });
     } catch (taskError) {

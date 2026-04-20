@@ -185,3 +185,10 @@ export interface DashboardChartSeries {
 export interface SearchAreaState {
   geometry: GeoJsonObject | null;
 }
+
+export interface PropertyCommentary {
+  propertyId: string;
+  commentary: string;
+  provider: string;
+  model: string | null;
+}

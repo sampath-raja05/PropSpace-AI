@@ -1,7 +1,6 @@
-import { appConfig } from "@/lib/constants";
 import { calculateEmi } from "@/lib/emi";
 import { resolvePropertyImagesById } from "@/lib/property-seeds";
-import { getServerApiBaseUrls, joinApiUrl } from "@/lib/api-targets";
+import { getBrowserApiBaseUrl, getServerApiBaseUrls, joinApiUrl } from "@/lib/api-targets";
 import {
   alertRules,
   cityAllocationSeries,
@@ -19,6 +18,7 @@ import type {
   EmiCalculation,
   EmiCalculationInput,
   PortfolioHolding,
+  PropertyCommentary,
   Property,
   PropertyMetrics
 } from "@/types";
@@ -30,7 +30,7 @@ interface FetchFallbackOptions {
 
 async function fetchFromApi(path: string, init?: RequestInit & { next?: { revalidate?: number } }) {
   if (typeof window !== "undefined") {
-    return fetch(joinApiUrl(appConfig.apiBaseUrl, path), init);
+    return fetch(joinApiUrl(getBrowserApiBaseUrl(), path), init);
   }
 
   let lastError: unknown = null;
@@ -177,6 +177,17 @@ function normalizeEmi(raw: unknown): EmiCalculation {
   };
 }
 
+function normalizePropertyCommentary(raw: unknown): PropertyCommentary {
+  const commentary = raw as Record<string, unknown>;
+
+  return {
+    commentary: String(commentary.commentary ?? ""),
+    model: commentary.model ? String(commentary.model) : null,
+    propertyId: String(commentary.propertyId ?? commentary.property_id ?? ""),
+    provider: String(commentary.provider ?? "unknown"),
+  };
+}
+
 async function fetchWithFallback<T>(
   path: string,
   fallback: T,
@@ -267,6 +278,26 @@ export async function getEmiCalculation(propertyId: string, input: EmiCalculatio
   });
 
   return fetchWithFallback(`/properties/${propertyId}/emi?${searchParams.toString()}`, fallback, normalizeEmi, {
+    revalidate: false
+  });
+}
+
+export async function getPropertyCommentary(propertyId: string) {
+  const property = getPropertyBySlug(propertyId);
+  const fallback = {
+    commentary: property
+      ? `${property.title} in ${property.locality}, ${property.city} offers a balanced investment profile with modeled appreciation of ${property.annualAppreciation.toFixed(1)}% and rental yield of ${property.rentalYield.toFixed(1)}%. ${
+          property.overpricingPercent > 6
+            ? "The main watchout is that the current ask sits above our fair-value range, so negotiation matters."
+            : "The current pricing sits reasonably close to our fair-value estimate."
+        }`
+      : "We could not generate commentary for this property.",
+    model: null,
+    propertyId,
+    provider: "local-fallback"
+  } satisfies PropertyCommentary;
+
+  return fetchWithFallback(`/ml/commentary/${propertyId}`, fallback, normalizePropertyCommentary, {
     revalidate: false
   });
 }

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { usePortfolioStore } from "@/store/portfolio-store";
 import type { Property } from "@/types";
-import { cn, formatCompactCurrency, formatCurrency, formatScore } from "@/lib/utils";
+import { cn, formatCompactCurrency, formatNumber, formatScore } from "@/lib/utils";
 
 export function PropertyCard({ property }: { property: Property }) {
   const { watchlist, toggleWatchlist } = usePortfolioStore();
@@ -76,28 +76,33 @@ export function PropertyCard({ property }: { property: Property }) {
         </div>
 
         <div className="grid grid-cols-1 gap-3 rounded-[22px] bg-white/55 p-3 min-[500px]:grid-cols-3 dark:bg-slate-800/45">
-          <div className="min-w-0 rounded-2xl bg-background/70 px-3 py-3">
+          <div className="flex min-h-[8.5rem] min-w-0 flex-col rounded-2xl bg-background/70 px-3 py-3 text-left">
             <p className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
               <BedDouble className="h-3.5 w-3.5" />
               BHK
             </p>
-            <p className="mt-2 break-words text-base font-semibold sm:text-lg">
+            <p className="mt-3 text-[clamp(1.1rem,2vw,1.3rem)] font-semibold leading-tight [overflow-wrap:anywhere]">
               {property.bhk === 0 ? property.propertyType : `${property.bhk} BHK`}
             </p>
           </div>
-          <div className="min-w-0 rounded-2xl bg-background/70 px-3 py-3">
+          <div className="flex min-h-[8.5rem] min-w-0 flex-col rounded-2xl bg-background/70 px-3 py-3 text-left">
             <p className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
               <Ruler className="h-3.5 w-3.5" />
               Size
             </p>
-            <p className="mt-2 break-words text-base font-semibold sm:text-lg">{property.sqft.toLocaleString("en-IN")} sqft</p>
+            <p className="mt-3 font-semibold leading-tight tabular-nums">
+              <span className="block text-[clamp(1.1rem,2vw,1.45rem)]">{formatNumber(property.sqft)}</span>
+              <span className="mt-1 block text-[clamp(1rem,1.6vw,1.15rem)] text-muted-foreground">sqft</span>
+            </p>
           </div>
-          <div className="min-w-0 rounded-2xl bg-background/70 px-3 py-3">
+          <div className="flex min-h-[8.5rem] min-w-0 flex-col rounded-2xl bg-background/70 px-3 py-3 text-left">
             <p className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
               <BadgeCheck className="h-3.5 w-3.5" />
               Value
             </p>
-            <p className="mt-2 break-words text-base font-semibold sm:text-lg">{formatCurrency(property.predictedPrice)}</p>
+            <p className="mt-3 text-[clamp(1.1rem,2vw,1.35rem)] font-semibold leading-tight tabular-nums [overflow-wrap:anywhere]">
+              {formatCompactCurrency(property.predictedPrice)}
+            </p>
           </div>
         </div>
 
